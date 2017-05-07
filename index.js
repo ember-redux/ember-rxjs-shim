@@ -15,15 +15,14 @@ module.exports = {
       tsconfig: {
         compilerOptions: {
           module: "es2015",
-          target: "es6",
+          target: "es2015",
           moduleResolution: "node",
-          rootDir: "src",
-          outDir: "dist",
+          outDir: "",
           sourceMap: true,
           declaration: true
         },
-        files: [
-          "src/**/*.ts"
+        include: [
+          'src/**/*.ts'
         ]
       }
     });
@@ -32,7 +31,7 @@ module.exports = {
       return this._super.treeForAddon.call(this, theTree);
     }
 
-    const trees = mergeTrees([rxTree, tree], {
+    const trees = mergeTrees([theTree, tree], {
       overwrite: true
     });
 
