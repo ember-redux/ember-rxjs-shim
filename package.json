@@ -20,7 +20,7 @@
   "dependencies": {
     "ember-cli-babel": "^6.1.0",
     "broccoli-merge-trees": "^1.1.4",
-    "typescript": "^2.3.0",
+    "typescript": "2.3.0",
     "broccoli-typescript-compiler": "^1.0.1"
   },
   "devDependencies": {
@@ -43,7 +43,7 @@
     "ember-source": "~2.13.0",
     "ember-welcome-page": "^3.0.0",
     "loader.js": "^4.2.3",
-    "rxjs": "^5.3.1"
+    "rxjs": "^5.4.3"
   },
   "engines": {
     "node": ">= 4"
